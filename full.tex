@@ -1,0 +1,81 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{geometry}%
+\geometry{paperheight=25cm,paperwidth=25cm}%
+\usepackage{titlesec}%
+\usepackage{tikz}%
+%
+%
+%
+\begin{document}%
+\normalsize%
+\pagecolor{black}%
+\color{white}%
+\titleformat%
+{\section}%
+{\clearpage\null\vfil\bfseries\Huge}%
+{\filright\thesection}%
+{1 em}%
+{\filright\Huge}%
+[\vfil\newpage]%
+\section{The simple stuff}%
+\label{sec:Thesimplestuff}%
+Some regular text and some%
+\newpage
+
+%
+\section{Aliens on a foreign planet}%
+\label{sec:Aliensonaforeignplanet}%
+\newpage%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[opacity = 1, inner sep = 0 pt] at(current page.center){\includegraphics[width =\paperwidth, height =\paperheight]{images/Aliens_on_a_foreign_planet.png}};%
+\end{tikzpicture}%
+\newpage
+
+%
+\section{Blueprints for a green power plant}%
+\label{sec:Blueprintsforagreenpowerplant}%
+\newpage%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[opacity = 1, inner sep = 0 pt] at(current page.center){\includegraphics[width =\paperwidth, height =\paperheight]{images/Blueprints_for_a_green_power_plant.png}};%
+\end{tikzpicture}%
+\newpage
+
+%
+\section{Plans for a faster than light rocket engine}%
+\label{sec:Plansforafasterthanlightrocketengine}%
+\newpage%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[opacity = 1, inner sep = 0 pt] at(current page.center){\includegraphics[width =\paperwidth, height =\paperheight]{images/Plans_for_a_faster_than_light_rocket_engine.png}};%
+\end{tikzpicture}%
+\newpage
+
+%
+\section{Sylvain a French engineer living in Switzerland}%
+\label{sec:SylvainaFrenchengineerlivinginSwitzerland}%
+\newpage%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[opacity = 1, inner sep = 0 pt] at(current page.center){\includegraphics[width =\paperwidth, height =\paperheight]{images/Sylvain_a_French_engineer_living_in_Switzerland.png}};%
+\end{tikzpicture}%
+\newpage
+
+%
+\section{The score of an Alien symphonie}%
+\label{sec:ThescoreofanAliensymphonie}%
+\newpage%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[opacity = 1, inner sep = 0 pt] at(current page.center){\includegraphics[width =\paperwidth, height =\paperheight]{images/The_score_of_an_Alien_symphonie.png}};%
+\end{tikzpicture}%
+\newpage
+
+%
+\end{document}
